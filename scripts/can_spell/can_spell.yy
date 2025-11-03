@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"can_spell",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"can_spell",
+  "parent":{
+    "name":"HERO",
+    "path":"HERO.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"is_opposite",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"is_opposite",
+  "parent":{
+    "name":"HERO",
+    "path":"HERO.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

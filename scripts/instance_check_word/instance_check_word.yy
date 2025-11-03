@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"instance_check_word",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"instance_check_word",
+  "parent":{
+    "name":"HERO",
+    "path":"HERO.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
