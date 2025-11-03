@@ -1,3 +1,35 @@
+// --- 1️⃣ Start the game in a larger window (80% of display) ---
+var screen_w = display_get_width();
+var screen_h = display_get_height();
+
+var target_w = screen_w * 0.8;
+var target_h = screen_h * 0.8;
+
+window_set_size(target_w, target_h);
+window_center();
+
+// --- 2️⃣ Base GUI resolution you designed for ---
+global.base_gui_w = 1280;
+global.base_gui_h = 720;
+
+// --- 3️⃣ Auto-fit the GUI to the window proportionally ---
+var win_w = window_get_width();
+var win_h = window_get_height();
+
+var aspect = global.base_gui_w / global.base_gui_h;
+var gui_w, gui_h;
+
+if (win_w / win_h > aspect) {
+    gui_h = global.base_gui_h;
+    gui_w = gui_h * (win_w / win_h);
+} else {
+    gui_w = global.base_gui_w;
+    gui_h = gui_w / (win_w / win_h);
+}
+
+display_set_gui_size(gui_w, gui_h);
+
+
 global.typed = "";
 global.ammo = "";
 global.textbox = instance_create_layer(0, 0, "Instances", oTextbox);
@@ -33,22 +65,20 @@ npc_lines = [
     // family tone
     "We're so proud of you.",
     "Take a breath, we're right here.",
-    "You're doing your best, and that's enough.",
+    "You're doing awesome.",
     "You've come so far already.",
-    "You don't have to carry it alone.",
+    "You don't have to do it alone.",
     "We see how hard you try.",
     "You've got more strength than you think.",
     "You're not alone!",
-    "We believe in you, always.",
+    "We believe in you.",
 
     // friends tone
     "Hey, you got this.",
     "Look at you go!",
     "You're doing better than you think.",
     "Don't forget to rest sometimes.",
-    "You make everything feel lighter.",
     "I've got your back.",
-    "The world's a little better with you in it.",
     "We'll get through this together.",
     "Proud of you, seriously.",
 ];

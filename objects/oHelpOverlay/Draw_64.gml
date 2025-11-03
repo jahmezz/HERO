@@ -12,16 +12,18 @@ if (alpha > 0.01) {
     var cx = gui_w / 2;
     var cy = gui_h / 2;
 
-    draw_text_transformed_color(cx - 200, cy - 120,
-        "HOW TO PLAY\n\n" +
+    draw_text_transformed_color(cx - 200, cy - 130,
+        "HOW TO PLAY\n" +
+		"Borrow courage from friends.\nUse courage to overcome obstacles.\n\n" +
         "[ARROWS]  Move\n" +
 		"[SPACE]   Talk to friends\n" +
 		"[TYPE]    Type words you see to destroy them\n" +
 		"[ENTER]   Submit word\n" +
-		"[ESC]     Show / Hide controls",
+		"[ESC]     Show / Hide controls\n" +
+		"[F11]     Toggle Fullscreen",
         1.3, 1.3, 0,
         c_white, c_white, c_white, c_white, 1);
 
-    draw_text(cx - 60, cy + 150, "Press [ESC] to close");
+    draw_text(cx - 60, cy + 170, "Press [ESC] to close");
     draw_set_alpha(1);
 }
